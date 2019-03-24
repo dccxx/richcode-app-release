@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial</title>
+  <style>
+    body {
+      background: #dddddd;
+    }
+
+    .bound {
+      border:     2px dashed #1ab394;
+      padding:    40px 20px 20px;
+      background: #ffffff;
+    }
+
+    pre {
+      color: #1ab394;
+    }
+
+    h2 {
+      margin-bottom: -2px;
+      background:    #1ab394;
+      color:         #ffffff;
+      padding:       5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hướng dẫn thêm API</h1>
+
+<h2>InHouseV2</h2>
+<div class="bound">
+  Link:
+  <pre>http://YOUR_API_URL/v2/affiliate/offer/findAll/?token=</pre>
+  Token:
+  <pre>YOUR_TOKEN</pre>
+  <h3>Ví dụ</h3>
+  Link:
+  <pre>http://api.mobrider.com/v2/affiliate/offer/findAll/?token=</pre>
+  Token:
+  <pre>aDhjdOptMi183vjNoI4DQOMozQPjnCud</pre>
+</div>
+
+<h2>Appflood</h2>
+<div class="bound">
+  Link:
+  <pre>http://YOUR_API_URL/s2s_get_p_ads?token=</pre>
+  Token:
+  <pre>YOUR_TOKEN</pre>
+  <h3>Ví dụ</h3>
+  Link:
+  <pre>http://api.appflood.com/s2s_get_p_ads?token=</pre>
+  Token:
+  <pre>3e84ca456e14de9d</pre>
+</div>
+
+<h2>Affise</h2>
+<div class="bound">
+  Link:
+  <pre>http://YOUR_API_URL/3.0/offers?API-Key=</pre>
+  Token:
+  <pre>YOUR_TOKEN</pre>
+  <h3>Ví dụ</h3>
+  Link:
+  <pre>http://api.accordmobi.affise.com/3.0/offers?API-Key=</pre>
+  Token:
+  <pre>cf6c25fa420d27ca32733f59ebb5dcf6558035455</pre>
+</div>
+
+<h2>Afftrack</h2>
+<div class="bound">
+  Link:
+  <pre>http://YOUR_API_URL/apiv2/?key=</pre>
+  Token:
+  <pre>YOUR_TOKEN</pre>
+  <h3>Ví dụ</h3>
+  Link:
+  <pre>http://richcode-ad.afftrack.com/apiv2/?key=</pre>
+  Token:
+  <pre>55d81262fbd75261a3d3267e756a945f</pre>
+</div>
+
+<h2>Appthis</h2>
+<div class="bound">
+  Link:
+  <pre>http://feed.appthis.com/feed/v1?api_key=</pre>
+  Token:
+  <pre>YOUR_TOKEN</pre>
+  <h3>Ví dụ</h3>
+  Link:
+  <pre>http://feed.appthis.com/feed/v1?api_key=</pre>
+  Token:
+  <pre>55d81262fbd75261a3d3267e756a945f</pre>
+</div>
+
+<h2>Offerlook</h2>
+<div class="bound">
+  Link:
+  <pre>http://API_DOMAIN/aff/v1/batches/offers</pre>
+  Token:
+  <pre>EMAIL|API_KEY</pre>
+  <h3>Ví dụ</h3>
+  Link:
+  <pre>http://richcode.api.offerslook.com</pre>
+  Token:
+  <pre>richcode@gmail.com|7049c4bafa0e4fff87d056ebf45b66dc</pre>
+</div>
+
+<h1>Hướng dẫn postback smartlink</h1>
+
+<h2>&payout=NETWORK_PARAM</h2>
+<div class="bound">
+  Để tạo postback cho smartlink ta thêm &payout=NETWORK_PARAM vào cuối link postback. NETWORK_PARAM các bạn có thể xem trên tài liệu của net
+  <h3>Ví dụ cho HasOffer</h3>
+  Link postback ban đầu:
+  <pre>http://richcode.top/postback?sub={aff_sub}</pre>
+  Link postback cho smartlink:
+  <pre>http://richcode.top/postback?sub={aff_sub}&payout={payout}</pre>
+  <pre>
+Tương tự các thông số khác
+- Hasoffer, Inhouse -> payout={payout}
+- Affise -> payout={sum}
+- Afftract -> payout=#amount#
+- Offerlook -> payout={payout}
+  </pre>
+</div>
+
+</body>
+</html>
