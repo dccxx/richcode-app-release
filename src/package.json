@@ -29,7 +29,7 @@
     "mysqldump": "^2.2.1",
     "node-cache": "^4.2.0",
     "node-xlsx": "^0.12.1",
-    "nodegit": "^0.24.1",
+    "nodegit": "0.24.1",
     "numeral": "^2.0.6",
     "objectid": "^3.2.1",
     "request-ip": "^2.0.2",
